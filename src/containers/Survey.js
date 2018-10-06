@@ -3,8 +3,6 @@ import './Survey.css';
 import first from '.././assets/images/food.png';
 import third from '.././assets/images/third.png';
 var firebase = require('firebase/app');
-var firebaseAuth = require('firebase/auth');
-var firebaseDatabase = require('firebase/database');
 var uuid = require('uuid');
 
 var config = {
@@ -56,9 +54,6 @@ class Survey extends Component {
 		this.setState({
 			isSubmitted: true
 		});
-
-		console.log(event.target.value);
-
 	}
 
 	answerSelected = (event) => { 
@@ -73,7 +68,6 @@ class Survey extends Component {
 		}
 
 		this.setState({answers: answers});
-		console.log(this.state.answers);
 	}
 
 	render () {
