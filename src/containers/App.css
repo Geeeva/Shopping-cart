@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'SignikaRegular';
+    src: url('.././assets/fonts/Signika-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SignikaSemibold';
+    src: url('.././assets/fonts/Signika-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SignikaBold';
+    src: url('.././assets/fonts/Signika-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SignikaBold';
+    src: url('.././assets/fonts/Signika-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HindMaduraiRegular';
+    src: url('.././assets/fonts/HindMadurai-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HindMaduraiBold';
+    src: url('.././assets/fonts/HindMadurai-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LoraBold';
+    src: url('.././assets/fonts/Lora-BoldItalic.ttf') format('truetype');
+}
+
+body {
+	background: url('.././assets/images/food-icons.svg') no-repeat;
+	background-size: cover;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: SignikaRegular;
+    font-size: 18px;
+    color: #fff;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 479px) {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
