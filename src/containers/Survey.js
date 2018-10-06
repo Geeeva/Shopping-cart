@@ -167,7 +167,7 @@ class Survey extends Component {
 							  	<input type="radio" name="answer3" value="always" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>
-							<label cclassName="radio-wrapper">usually
+							<label className="radio-wrapper">usually
 							  	<input type="radio" name="answer3" value="usually" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>
@@ -175,7 +175,7 @@ class Survey extends Component {
 							  	<input type="radio" name="answer3" value="occasionally" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>
-							<label cclassName="radio-wrapper">never
+							<label className="radio-wrapper">never
 							  	<input type="radio" name="answer3" value="never" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>
@@ -211,7 +211,7 @@ class Survey extends Component {
 							  	<input type="radio" name="answer5" value="Not enough time after work to cook" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>
-							<label cclassName="radio-wrapper">Not enough time after work to shop for ingredients
+							<label className="radio-wrapper">Not enough time after work to shop for ingredients
 							  	<input type="radio" name="answer5" value="Not enough time after work to shop for ingredients" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>

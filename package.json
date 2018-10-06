@@ -1,5 +1,5 @@
 {
-  "name": "survey",
+  "name": "survey-depl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
