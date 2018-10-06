@@ -2,13 +2,10 @@ import React, {Component} from 'react';
 import './Survey.css';
 import first from '.././assets/images/food.png';
 import third from '.././assets/images/third.png';
-import foodIcons from '.././assets/images/food-icons.svg';
 var firebase = require('firebase/app');
 var firebaseAuth = require('firebase/auth');
 var firebaseDatabase = require('firebase/database');
 var uuid = require('uuid');
-
-
 
 var config = {
     apiKey: "AIzaSyC92RTibuvc4bzbZt2H28Z3lrsx3oRaosM",
@@ -18,7 +15,6 @@ var config = {
     storageBucket: "survey-91d3e.appspot.com",
     messagingSenderId: "1031923312610"
 };
-
 
 firebase.initializeApp(config);
 
@@ -127,109 +123,109 @@ class Survey extends Component {
 					<form className="form-grid" onSubmit={this.questionSubmit.bind(this)}>
 						<div className="first-section">
 							<p>How often do you cook dinner at home?</p>
-							<label class="radio-wrapper">daily
+							<label className="radio-wrapper">daily
 							  	<input type="radio" checked="checked" name="answer1" value="never" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">1-2 times a week
+							<label className="radio-wrapper">1-2 times a week
 							  	<input type="radio" name="answer1" value="1-2 times a week" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">3-4 times a week
+							<label className="radio-wrapper">3-4 times a week
 							  	<input type="radio" name="answer1" value="3-4 times a week" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">never
+							<label className="radio-wrapper">never
 							  	<input type="radio" name="answer1" value="daily" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
 						</div>
 
 						<div className="second-section">
 							<p>How often do you order delivery/take-out?</p>
-							<label class="radio-wrapper">never
+							<label className="radio-wrapper">never
 							  	<input type="radio" name="answer2" value="never" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">1-2 times a week
+							<label className="radio-wrapper">1-2 times a week
 							  	<input type="radio" name="answer2" value="1-2 times a week" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">3-4 times a week
+							<label className="radio-wrapper">3-4 times a week
 							  	<input type="radio" name="answer2" value="3-4 times a week" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">daily
+							<label className="radio-wrapper">daily
 							  	<input type="radio" name="answer2" value="daily" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
 						</div>
 
 						<div className="third-section">
 							<p>When you cook, do you use convenience products?</p>
-							<label class="radio-wrapper">always
+							<label className="radio-wrapper">always
 							  	<input type="radio" name="answer3" value="always" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">usually
+							<label cclassName="radio-wrapper">usually
 							  	<input type="radio" name="answer3" value="usually" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">occasionally
+							<label className="radio-wrapper">occasionally
 							  	<input type="radio" name="answer3" value="occasionally" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">never
+							<label cclassName="radio-wrapper">never
 							  	<input type="radio" name="answer3" value="never" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
 						</div>
 
 						<div className="fourth-section">
 							<p>What's your favorite type of food to cook?</p>
-							<label class="radio-wrapper">Chicken
+							<label className="radio-wrapper">Chicken
 							  	<input type="radio" name="answer4" value="Chicken" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">Beef
+							<label className="radio-wrapper">Beef
 							  	<input type="radio" name="answer4" value="Beef" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">Seafood
+							<label className="radio-wrapper">Seafood
 							  	<input type="radio" name="answer4" value="Seafood" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">Pork
+							<label className="radio-wrapper">Pork
 							  	<input type="radio" name="answer4" value="Pork" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">Vegetarian
+							<label className="radio-wrapper">Vegetarian
 							  	<input type="radio" name="answer4" value="Vegetarian" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
 						</div>
 
 						<div className="fifth-section">
 							<p>If you buy dinner instead of making it, why?</p>
-							<label class="radio-wrapper">Not enough time after work to cook
+							<label className="radio-wrapper">Not enough time after work to cook
 							  	<input type="radio" name="answer5" value="Not enough time after work to cook" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">Not enough time after work to shop for ingredients
+							<label cclassName="radio-wrapper">Not enough time after work to shop for ingredients
 							  	<input type="radio" name="answer5" value="Not enough time after work to shop for ingredients" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">Not enough time after work to shop for ingredients
+							<label className="radio-wrapper">Not enough time after work to shop for ingredients
 							  	<input type="radio" name="answer5" value="Not enough time after work to shop for ingredients" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">I'm not a great cook
+							<label className="radio-wrapper">I'm not a great cook
 							  	<input type="radio" name="answer5" value="I'm not a great cook" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
-							<label class="radio-wrapper">It's too much effort
+							<label className="radio-wrapper">It's too much effort
 							  	<input type="radio" name="answer5" value="It's too much effort" onChange={this.answerSelected} />
-							  	<span class="checkmark"></span>
+							  	<span className="checkmark"></span>
 							</label>
 						</div>
 						<div className="sixt-section">
