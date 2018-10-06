@@ -2,10 +2,12 @@ import React, {Component, Fragment} from 'react';
 import './Survey.css';
 import first from '.././assets/images/food.png';
 import third from '.././assets/images/third.png';
-var firebase = require('firebase/app');
-var uuid = require('uuid');
+const firebase = require('firebase/app');
+const firebaseAuth = require('firebase/auth');
+const firebaseDatabase = require('firebase/database');
+const uuid = require('uuid');
 
-var config = {
+const config = {
     apiKey: "AIzaSyC92RTibuvc4bzbZt2H28Z3lrsx3oRaosM",
     authDomain: "survey-91d3e.firebaseapp.com",
     databaseURL: "https://survey-91d3e.firebaseio.com",
@@ -37,7 +39,7 @@ class Survey extends Component {
 
 	nameSubmit = (event) => {
 		event.preventDefault(); 
-		var name = this.name.value;
+		let name = this.name.value;
 		this.setState({name: name});
 	}
 
@@ -57,7 +59,7 @@ class Survey extends Component {
 	}
 
 	answerSelected = (event) => { 
-		var answers = this.state.answers;
+		let answers = this.state.answers;
 
 		if(event.target.name === 'answer1') {
 			answers.answer1 = event.target.value;
@@ -72,8 +74,8 @@ class Survey extends Component {
 
 	render () {
 
-		var name = '';
-		var questions = '';
+		let name = '';
+		let questions = '';
 
 		if(this.state.name === '' && this.state.isSubmitted === false) {
 			name = 
