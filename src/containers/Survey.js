@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import './Survey.css';
 import first from '.././assets/images/food.png';
 import third from '.././assets/images/third.png';
@@ -247,11 +247,11 @@ class Survey extends Component {
 		}
 
 		return (
-			<div>
+			<Fragment>
 				{name}
 
 				{questions}
-			</div>
+			</Fragment>
 		)
 	}
 }

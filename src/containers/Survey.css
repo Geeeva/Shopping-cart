@@ -23,7 +23,7 @@
 }
 
 h3 {
-	font-family: LoraBold;
+	font-family: LoraBoldItalic;
 	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -109,7 +109,7 @@ h3 {
 	border: none;
 	border-bottom: 1px solid #fff;
 	outline: none;
-	font-family: LoraBold;
+	font-family: LoraBoldItalic;
 	color: #fff;
 	background: transparent;
     margin-left: 200px;
@@ -225,7 +225,7 @@ h3 {
 }
 
 .second-wrapper h3 {
-	font-family: LoraBold;
+	font-family: LoraBoldItalic;
 	font-size: 21px;
 	color: #032134;
 	margin-bottom: 20px;
