@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Survey from './Survey';
 import Footer from '.././components/Footer/Footer';
 import './App.css';
-import 'normalize.css';
+//import 'normalize.css';
 
 class App extends Component {
     render() {
