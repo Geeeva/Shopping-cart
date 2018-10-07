@@ -230,6 +230,7 @@ figure a {
 
     #footer-bg-xs {
         display: block;
+        max-width: 479px;
     }
 
     .social-footer .email {

@@ -68,6 +68,7 @@ h3 {
 }
 
 .first {
+	position: relative;
 	display: inline-block;
 	color: #fff;
 	animation: picRotation 2500ms ease-out forwards 1s;
@@ -586,6 +587,7 @@ h3 {
 
 	.radio-wrapper {
 		font-size: 15px;
+		margin: 7px 0px 10px 50px;
 		margin-bottom: 10px;
 	}
 
