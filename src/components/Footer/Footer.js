@@ -20,8 +20,8 @@ const footer = (props) => {
                     <path fill="#E4F5F9" d="M0,161c0,0,260.1,53.5,346.6,53.5S676,160.5,676,160.5v273H0V161z"/>
                 </svg>
 
-                <svg id="footer-bg-xs" viewBox="0 234 600 261.5">
-                    <path fill="#E4F5F9" d="M0,260.7c0,0,230,36,306.6,36s291.4-36,291.4-36v234.9H0V260.7z"/>
+                <svg id="footer-bg-xs" viewBox="0 293.1 600 306.9">
+                    <path fill="#E4F5F9" d="M0,322.5c0,0,230,42.7,306.6,42.7S598,322.5,598,322.5v278.4H0V322.5z"/>
                 </svg>
                 <div className="social-footer">
                     <div className="social">

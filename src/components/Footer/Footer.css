@@ -62,7 +62,7 @@
 }
 
 .social-footer .social .intro:hover {
-    color: #6CBED6;
+    color: #2E627C;
     transition: color .6s ease-in-out;
 }
 
@@ -129,7 +129,7 @@ figure a {
 }
 
 .email a:hover {
-    color: #6CBED6;
+    color: #2E627C;
     transition: color .4s ease-in-out;
 }
 
