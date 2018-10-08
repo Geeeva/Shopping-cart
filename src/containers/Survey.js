@@ -84,7 +84,7 @@ class Survey extends Component {
 						<img src={first} alt="food"/>
 					</div>
 					<div className="message-wrapper">
-						<h1 className="first-h1">{'Welcome to food survey'}</h1>
+						<h1 className="first-h1">{'Welcome to Food survey'}</h1>
 						<h3>{'Pls. Let us your name:'}</h3>
 						<form onSubmit={this.nameSubmit.bind(this)}>
 							<input className="name" type="text" placeholder="Your name" ref={input => this.name = input} />
@@ -120,7 +120,7 @@ class Survey extends Component {
 						<div className="first-section">
 							<p>How often do you cook dinner at home?</p>
 							<label className="radio-wrapper">daily
-							  	<input type="radio" checked="checked" name="answer1" value="never" onChange={this.answerSelected} />
+							  	<input type="radio" name="answer1" value="never" onChange={this.answerSelected} />
 							  	<span className="checkmark"></span>
 							</label>
 							<label className="radio-wrapper">1-2 times a week
