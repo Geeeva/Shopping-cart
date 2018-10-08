@@ -41,7 +41,7 @@ h3 {
 .second-h1, .third-h1 {
 	color: #032134;
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 0px;
 }
 
 .third-h1 {
@@ -92,7 +92,7 @@ h3 {
 
 .first img {
 	display: block;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin: 0 auto;
 }
@@ -561,6 +561,9 @@ h3 {
 
     .name {
     	font-size: 18px;
+    	margin-left: 160px;
+    	width: 120px;
+    	padding-left: 10px;
     }
 
     .second-h1 {
@@ -589,10 +592,6 @@ h3 {
 		font-size: 15px;
 		margin: 7px 0px 10px 50px;
 		margin-bottom: 10px;
-	}
-
-	.name {
-		width: 150px;
 	}
 
     .form-grid {
