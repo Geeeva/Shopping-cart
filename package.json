@@ -1,15 +1,13 @@
 {
-  "homepage": "http://Geeeva.github.io/Timer",
-  "name": "survey-depl",
+  "homepage": "http://Geeeva.github.io/Shopping-cart",
+  "name": "shopping-cart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^5.5.1",
     "normalize.css": "^8.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5",
-    "uuid": "^3.3.2"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
