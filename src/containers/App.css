@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('.././assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "RobotoRegular", "Helvetica Neue", sans-serif;
+}
+
+p {
+    color: #999;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-product,
+.list-products,
+.shopping-cart {
+    width: 33.33%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.add-product {
+    padding: 30px;
+}
+
+.add-product form div {
+    margin-bottom: 15px;
+}
+
+.add-product label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.add-product input,
+.add-product textarea {
+    width: 100%;
+    border: 1px solid #eee;
+    background: #fff;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    letter-spacing: .5px;
+    color: #999;
+}
+
+.add-product button {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    margin-top: 15px;
+    background: #0A9CE9;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.list-products {
+    padding: 30px;
+    background: #F6F7F9;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.product img {
+    width: 60%;
+}
+
+.product p {
+    letter-spacing: 2px;
+
+    color: #999;
+}
+
+.product p:first-letter {
+        text-transform: uppercase;
+}
+
+.details-button,
+.buy-button,
+.shopping-cart-summary button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    color: #999;
+    font-weight: 100;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.details-button:hover,
+.buy-button:hover {
+    transition: opacity .3s ease-in;
+    opacity: .7;
+}
+
+.details-button {
+    background: transparent;
+}
+
+.buy-button,
+.shopping-cart-summary button {
+    background: #44E19F;
+    color: #fff;
+    border: none;
+}
+
+.shopping-cart {
+    position: relative;
+    padding: 20px;
+}
+
+.shopping-cart-product {
+    margin-bottom: 10px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    border-radius: 3px;
+}
+
+.product-info img {
+    width: 80px;
+    height: 80px;
+}
+
+.product-info div h3 {
+    font-weight: 100;
+    margin-bottom: -10px;
+    color: #999;
+}
+
+.product-info div h3:first-letter {
+    text-transform: uppercase;
+}    
+
+.product-count {
+    display: inline-block;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    margin-top: -30px;
+}
+
+.product-count button {
+    cursor: pointer;
+    color: #999;
+    background: transparent;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.shopping-cart-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.shopping-cart-summary button {
+    padding: 10px;
+}
+
+/***WatchNameError, WatchDescriptionError, .WatchUrlError, WatchPriceError***/
+
+.WatchNameError, .WatchDescriptionError, .WatchUrlError, .WatchPriceError {
+    position: relative;
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.WatchNameError .tooltiptext, .WatchDescriptionError .tooltiptext, .WatchUrlError .tooltiptext, .WatchPriceError .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    z-index: 1;
+    width: 80%;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    border-radius: 8px;
+    padding: 3px 0 3px 15px;
+    opacity: 0;
+    -webkit-transition:  opacity .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.WatchNameError .tooltiptext::after, .WatchDescriptionError .tooltiptext::after, .WatchUrlError .tooltiptext::after, .WatchPriceError .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+}
+
+.WatchNameError .visible, .WatchDescriptionError .visible, .WatchUrlError .visible, .WatchPriceError .visible {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+form label {
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 479px) {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

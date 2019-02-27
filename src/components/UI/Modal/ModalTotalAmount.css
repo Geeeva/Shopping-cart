@@ -1,0 +1,38 @@
+.Modal {
+    position: absolute;
+    z-index: 500;
+    background-color: #b9dfcf;
+    width: 400px;
+    border: none;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    border-radius: 5px;
+    padding: 16px;
+    left: 40%;
+    top: 100px;
+    box-sizing: border-box;
+    transition: all 0.4s ease-out;
+
+    text-align: center;
+}
+
+.Modal p {
+    color: #fff;
+}
+
+.Modal .btnClose {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: auto;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
